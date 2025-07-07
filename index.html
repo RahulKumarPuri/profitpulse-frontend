@@ -1,23 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ProfitPulse – Login</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>ProfitPulse – Invest & Trade</title>
+  <link rel="stylesheet" href="./style.css"/>
 </head>
-<body class="login-page">
-  <div class="login-box">
-    <h1>🔐 Login to ProfitPulse</h1>
+<body>
 
-    <input type="text" id="mobile" placeholder="📱 Mobile Number" required />
-    <input type="password" id="password" placeholder="🔑 Password" required />
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">ProfitPulse</h1>
+    <div class="nav-buttons">
+      <button onclick="window.location.href='index.html'">Home</button>
+      <button onclick="window.location.href='register.html'">Register</button>
+      <button onclick="window.location.href='index.html'">Login</button>
+    </div>
+  </nav>
 
-    <button onclick="loginUser()">🚀 Login</button>
+  <!-- Hero -->
+  <header class="hero">
+    <h1>Trade & Invest in Stocks</h1>
+    <p>Join ProfitPulse and start trading like a pro.</p>
+    <button onclick="window.location.href='register.html'">Get Started</button>
+  </header>
 
-    <p class="register-link">New user? <a href="register.html">Create Account</a></p>
-  </div>
+  <!-- Features -->
+  <section class="features">
+    <div class="card">
+      <img src="https://via.placeholder.com/48/FF0000/FFFFFF?text=⚡" alt="Fast"/>
+      <h3>Quick Onboarding</h3>
+      <p>Register & start in minutes.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/48/FF0000/FFFFFF?text=📊" alt="Charts"/>
+      <h3>Advanced Charts</h3>
+      <p>Real-time market insights.</p>
+    </div>
+    <div class="card">
+      <img src="https://via.placeholder.com/48/FF0000/FFFFFF?text=💼" alt="Trade"/>
+      <h3>Trade Anytime</h3>
+      <p>Access from your mobile.</p>
+    </div>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- How It Works -->
+  <section class="steps">
+    <h2>How It Works</h2>
+    <ol>
+      <li>Register & Login</li>
+      <li>Browse Stocks & Buy</li>
+      <li>Submit UPI TXN</li>
+      <li>Admin verifies payment</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>© 2025 ProfitPulse. All rights reserved.</p>
+  </footer>
+
 </body>
-</html>
+    </html>
