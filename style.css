@@ -91,3 +91,55 @@ footer {
   font-size:0.9rem;
   color:#555;
   }
+
+  /* Dashboard Section */
+.dashboard {
+  padding:60px 40px;
+  background:#f5f7fb;
+}
+.dashboard h2 {
+  font-size:2rem;
+  margin-bottom:30px;
+  color:#1030b0;
+  text-align:center;
+}
+.stock-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+}
+.stock-card {
+  background:white;
+  border:1px solid #e2e6ee;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  text-align:center;
+  transition:transform 0.2s;
+}
+.stock-card:hover {
+  transform:translateY(-4px);
+}
+.stock-card h3 {
+  font-size:1.4rem;
+  color:#222;
+  margin-bottom:10px;
+}
+.stock-card p {
+  font-size:1.1rem;
+  color:#333;
+  margin-bottom:15px;
+}
+.stock-card button {
+  background:#1030b0;
+  color:#fff;
+  border:none;
+  padding:10px 20px;
+  border-radius:6px;
+  font-weight:500;
+  cursor:pointer;
+  transition:background .3s;
+}
+.stock-card button:hover {
+  background:#1a3de6;
+  }
