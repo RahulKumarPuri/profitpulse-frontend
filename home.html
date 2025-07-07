@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ProfitPulse – Stocks</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="home-page">
-  <h1>📊 Welcome to ProfitPulse</h1>
+<body>
 
-  <div class="stock-list">
-
-    <div class="stock-card">
-      <h3>Reliance Industries</h3>
-      <p>₹2,800</p>
-      <button onclick="selectStock('Reliance', 2800)">Buy Now</button>
+  <!-- Navbar -->
+  <nav class="nav">
+    <div class="logo">ProfitPulse</div>
+    <div class="nav-actions">
+      <button onclick="logout()" class="nav-btn">Logout</button>
     </div>
+  </nav>
 
-    <div class="stock-card">
-      <h3>Tata Consultancy Services</h3>
-      <p>₹3,200</p>
-      <button onclick="selectStock('TCS', 3200)">Buy Now</button>
+  <!-- Dashboard -->
+  <section class="dashboard">
+    <h2>Select a Stock</h2>
+    <div class="stock-grid">
+
+      <div class="stock-card">
+        <h3>INFY</h3>
+        <p>₹1,520</p>
+        <button onclick="selectStock('INFY', 1520)">Buy</button>
+      </div>
+
+      <div class="stock-card">
+        <h3>TCS</h3>
+        <p>₹3,440</p>
+        <button onclick="selectStock('TCS', 3440)">Buy</button>
+      </div>
+
+      <div class="stock-card">
+        <h3>HDFC</h3>
+        <p>₹2,810</p>
+        <button onclick="selectStock('HDFC', 2810)">Buy</button>
+      </div>
+
     </div>
-
-    <div class="stock-card">
-      <h3>Infosys</h3>
-      <p>₹1,560</p>
-      <button onclick="selectStock('Infosys', 1560)">Buy Now</button>
-    </div>
-
-    <div class="stock-card">
-      <h3>HDFC Bank</h3>
-      <p>₹1,490</p>
-      <button onclick="selectStock('HDFC', 1490)">Buy Now</button>
-    </div>
-
-  </div>
+  </section>
 
   <script src="script.js"></script>
+  <script>
+    function logout() {
+      localStorage.clear();
+      window.location.href = "index.html";
+    }
+  </script>
+
 </body>
 </html>
